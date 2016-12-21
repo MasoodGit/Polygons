@@ -14,12 +14,14 @@ namespace Polygons
             var square = new Square(5);
             DisplayPolygon("Square", square);
 
+            var triangle = new Triangle(4);
+            DisplayPolygon("Triangle", triangle);
 
             Console.Read();
 
         }
 
-        private static void DisplayPolygon(string polygonType, ConcreteRegularPolygon polygon)
+        private static void DisplayPolygon(string polygonType, dynamic polygon)
         {
 
             Console.WriteLine("{0} Number of Sides : {1}",polygonType,polygon.NumberOfSides);
