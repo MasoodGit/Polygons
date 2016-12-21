@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="AbstractRegularPolygon.cs" />
     <Compile Include="ConcreteRegularPolygon.cs" />
+    <Compile Include="IRegularPolygon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Square.cs" />
     <Compile Include="Triangle.cs" />
