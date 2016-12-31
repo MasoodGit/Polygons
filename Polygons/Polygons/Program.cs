@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using Polygons.Library;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Polygons.Library;
 
 namespace Polygons
 {
@@ -34,7 +30,7 @@ namespace Polygons
                "Sunday"
             };
 
-            DisplayItems(daysOfWeek);
+            //DisplayItems(daysOfWeek);
 
             Console.Read();
 
@@ -43,7 +39,10 @@ namespace Polygons
         private static void DisplayPolygon(string polygonType, dynamic polygon)
         {
 
-            Console.WriteLine("{0} Number of Sides : {1}",polygonType,polygon.NumberOfSides);
+            Console.WriteLine("{0} Number of Sides : {1}", polygonType, polygon.NumberOfSides);
+            Console.WriteLine("{0} Perimeter : {1}", polygonType, polygon.GetPerimeter());
+            Console.WriteLine("{0} Perimeter : {1}", polygonType, polygon.GetArea());
+
         }
 
         public static void DisplayItems<T>(IEnumerable<T> collection)
